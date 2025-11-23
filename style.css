@@ -125,8 +125,10 @@ body {
     line-height: 1.6; /* Better readability */
     display: block;
 }
-.hero .hero-buttons {
-    margin-top: 32px !important; /* Pushes buttons down */
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 40px !important; /* ← increase spacing here */
 }
 
 .hero .btn {
