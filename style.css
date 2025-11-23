@@ -120,6 +120,7 @@ body {
     margin-bottom: 30px; /* add clear space before buttons */
     max-width: 650px; /* keeps text from stretching too wide */
 }
+
 .hero-buttons .btn {
   margin-right: 12px;
 }
