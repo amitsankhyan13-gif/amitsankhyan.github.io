@@ -113,12 +113,11 @@ body {
   text-shadow: 0 0 12px var(--accent-shadow);
 }
 
-/* Fix overlap under Job Title */
 .hero-subtitle {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 30px; /* add clear space before buttons */
-    max-width: 650px; /* keeps text from stretching too wide */
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--gold-bright);
+}
 }
 /* Fix tagline & button overlap */
 .hero-tagline {
