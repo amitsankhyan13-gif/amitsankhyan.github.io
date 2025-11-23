@@ -2,337 +2,455 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Amit Sankhyan – Training & Development Professional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit Sankhyan – Training & Development Professional</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="nav">
-    <div class="nav-brand">Amit Sankhyan</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#portfolio">Training Portfolio</a>
-      <a href="#books">My Books</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-mark">AS</span>
+        <span class="logo-text">Amit Sankhyan</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#training">Training Portfolio</a>
+        <a href="#books">My Books</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="section hero reveal">
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="section hero-section">
+    <div class="container hero-grid">
       <div class="hero-text">
-        <p class="hero-kicker">Training &amp; Development Professional</p>
-        <h1>Amit Kumar Sankhyan</h1>
-        <p class="hero-sub">
-          9+ years in BPO – customer service, sales &amp; collections – turning
-          real floor challenges into practical, measurable training.
+        <h1 class="hero-title">
+          Amit Kumar <span>Sankhyan</span>
+        </h1>
+        <p class="hero-subtitle">Training &amp; Development Professional</p>
+        <p class="hero-tagline">
+          Designing learning journeys that transform people and performance.
         </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#about">About Me</a>
-          <a class="btn ghost" href="resume.pdf" target="_blank">Download CV</a>
+        <div class="hero-buttons">
+          <a href="#about" class="btn primary">About Me</a>
+          <a href="resume.pdf" class="btn ghost" target="_blank" rel="noopener">Download CV</a>
         </div>
       </div>
 
-      <div class="hero-photo">
-        <div class="hero-photo-inner">
-          <img src="Profile.png" alt="Amit Sankhyan" />
+      <div class="hero-photo-wrapper">
+        <!-- Use your cut-out photo file name here (already in repo as Profile.png) -->
+        <div class="hero-photo-card">
+          <img src="Profile.png" alt="Amit Sankhyan" class="hero-photo">
+          <div class="hero-photo-glow"></div>
         </div>
-        <p class="hero-caption">
-          Designing learning journeys that transform people &amp; performance.
-        </p>
+        <div class="hero-badge">
+          <span class="hero-badge-title">5+ Years</span>
+          <span class="hero-badge-subtitle">Training Experience</span>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section reveal">
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container section-header">
       <h2>About Me</h2>
-      <div class="two-col">
+      <p>Training &amp; Development professional with BPO experience in customer service, sales and collections.</p>
+    </div>
+
+    <div class="container about-grid">
+      <div class="about-card">
+        <h3>Who I Am</h3>
         <p>
-          I am a Training &amp; Development professional with deep BPO experience
-          across customer service, sales and collections. I specialise in
-          building journeys that connect product knowledge, process excellence
-          and behavioural change.
-        </p>
-        <p>
-          My work moves beyond “sessions” – it focuses on metrics, feedback and
-          business outcomes. I enjoy simplifying complex processes, creating
-          clean training content, and coaching teams until the numbers change.
+          I design and deliver learning experiences that help people perform better on the floor – across customer service, sales, and collections processes.
+          My work sits at the intersection of classroom energy, process expertise, and business impact.
         </p>
       </div>
 
-      <div class="pill-row">
-        <span class="pill">New Hire Training</span>
-        <span class="pill">Sales &amp; Collections</span>
-        <span class="pill">Floor Coaching &amp; Huddles</span>
-        <span class="pill">CSAT &amp; NPS Improvement</span>
-        <span class="pill">Content &amp; PPT Design</span>
+      <div class="about-card">
+        <h3>What I Do</h3>
+        <ul>
+          <li>New hire &amp; refresher training for BPO processes.</li>
+          <li>Sales, objection handling, and collection communication.</li>
+          <li>Floor coaching, side-by-side support and calibration.</li>
+          <li>Reports, dashboards, and training effectiveness tracking.</li>
+        </ul>
       </div>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section reveal">
+      <div class="about-card">
+        <h3>How I Work</h3>
+        <ul>
+          <li>Blend stories, role plays, and practice-heavy activities.</li>
+          <li>Translate CSAT, NPS and productivity data into training actions.</li>
+          <li>Partner with stakeholders as a learning consultant – not just a facilitator.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section section-alt">
+    <div class="container section-header">
       <h2>Experience Snapshot</h2>
-      <div class="card-grid">
-        <article class="card">
+      <p>BPO experience across training, sales, service and collections.</p>
+    </div>
+
+    <div class="container timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
           <h3>Assistant Manager – Training</h3>
           <p>
-            Lead NHT, cross-training and refreshers for customer service, sales
-            and collections. Own batch performance, floor readiness and
-            post-training impact.
+            Lead New Hire Training (NHT), refreshers and floor coaching for contact centre processes.
+            Responsible for batches, assessments, training dashboards, stakeholder reviews and performance improvement.
           </p>
-        </article>
-        <article class="card">
-          <h3>Corporate Trainer &amp; Coach</h3>
-          <p>
-            Facilitate product, process and behavioural modules. Run huddles,
-            coaching sessions and refreshers linked to CSAT, NPS and productivity.
-          </p>
-        </article>
-        <article class="card">
-          <h3>BPO Domain Experience</h3>
-          <p>
-            9+ years across voice &amp; non-voice, escalations, sales, collections
-            and support – building training that fits the real floor environment.
-          </p>
-        </article>
+        </div>
       </div>
-    </section>
 
-    <!-- TRAINING PORTFOLIO -->
-    <section id="portfolio" class="section reveal">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Process Trainer / Senior Executive</h3>
+          <p>
+            Delivered soft skills, process and communication training for customer service, sales and collections.
+            Owned call coaching, quality calibration and behavioural feedback.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Customer Service &amp; Sales Roles</h3>
+          <p>
+            Hands-on experience talking to customers, handling escalations, and converting leads – foundation for realistic, floor-ready training.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRAINING PORTFOLIO ================= -->
+  <section id="training" class="section">
+    <div class="container section-header">
       <h2>Training Portfolio</h2>
+      <p>Interactive modules, CSAT / NPS focus and business-linked learning design.</p>
+    </div>
 
-      <!-- PPTs -->
-      <h3 class="section-sub">Training PPTs / Modules</h3>
-      <div class="card-grid">
-        <article class="card">
-          <h4>Personal Loan Fundamentals – Sales &amp; Collections</h4>
-          <p>
-            Product and process module for personal loans, built to improve
-            customer conversations and collection outcomes.
-          </p>
-          <button class="btn small toggle" data-target="#ppt1">View Module</button>
-          <div class="viewer" id="ppt1">
-            <!-- REPLACE src WITH RAW GITHUB LINK OF ppt-personal-loans.pptx -->
-            <iframe
-              src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/amitsankhyan13-gif/amitsankhyan.github.io/blob/main/ppt-personal-loans.pptx"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </article>
+    <div class="container cards-grid">
+      <!-- MODULE 1 -->
+      <article class="card">
+        <h3>Personal Loan Fundamentals – Sales &amp; Collections</h3>
+        <p>
+          Product and process module for personal loans, designed to improve customer conversations, cross-sell and collection outcomes.
+        </p>
+        <button class="btn small primary" data-modal-target="#ppt1-modal">View Module</button>
+        <div class="ppt-preview-note">Opens an interactive slideshow viewer.</div>
+      </article>
 
-        <article class="card">
-          <h4>Mastering Sales &amp; Training</h4>
-          <p>
-            Links sales performance with objection handling, coaching rhythm and
-            structured training design.
-          </p>
-          <button class="btn small toggle" data-target="#ppt2">View Module</button>
-          <div class="viewer" id="ppt2">
-            <!-- REPLACE src WITH RAW GITHUB LINK OF ppt-sales-training.pptx -->
-            <iframe
-              src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/amitsankhyan13-gif/amitsankhyan.github.io/blob/main/ppt-sales-training.pptx"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </article>
+      <!-- MODULE 2 -->
+      <article class="card">
+        <h3>Mastering Sales &amp; Training</h3>
+        <p>
+          Links sales performance with objection handling, coaching rhythm and structured training design,
+          built around real floor scenarios.
+        </p>
+        <button class="btn small primary" data-modal-target="#ppt2-modal">View Module</button>
+        <div class="ppt-preview-note">Opens an interactive slideshow viewer.</div>
+      </article>
+    </div>
+
+    <!-- CSAT / NPS -->
+    <div class="container kpi-grid">
+      <div class="kpi-card">
+        <h3>Customer Satisfaction (CSAT)</h3>
+        <p>Training aligned to experience drivers – empathy, resolution, ownership and communication.</p>
+        <img src="CSAT.png" alt="CSAT Improvement Chart" class="kpi-img">
       </div>
-
-      <!-- CSAT / NPS -->
-      <h3 class="section-sub">CSAT &amp; NPS Visuals</h3>
-      <div class="chart-row">
-        <div class="chart-card">
-          <img src="csat-chart.png" alt="Customer satisfaction framework" />
-          <p class="chart-text">
-            Training levers mapped to customer satisfaction – communities,
-            multi-channel communication, employee engagement and support.
-          </p>
-        </div>
-        <div class="chart-card">
-          <img src="nps-chart.png" alt="Net Promoter Score model" />
-          <p class="chart-text">
-            Detractors, passives and promoters used to connect learner behaviour
-            with loyalty impact.
-          </p>
-        </div>
+      <div class="kpi-card">
+        <h3>Net Promoter Score (NPS)</h3>
+        <p>Connecting everyday conversations to promoter behaviour and brand advocacy.</p>
+        <img src="NPS.png" alt="NPS Chart" class="kpi-img">
       </div>
+    </div>
+  </section>
 
-      <!-- CERTIFICATES -->
-      <h3 class="section-sub">Certificates</h3>
-      <div class="cert-row">
-        <div class="cert-thumb" data-full="cert1-full.jpg">
-          <img src="cert1-thumb.jpg" alt="Certificate 1" />
+  <!-- ================= BOOKS ================= -->
+  <section id="books" class="section section-alt">
+    <div class="container section-header">
+      <h2>My Books</h2>
+      <p>Fiction-styled training novels based on real corporate learning journeys.</p>
+    </div>
+
+    <div class="container cards-grid">
+      <!-- BOOK 1 -->
+      <article class="card book-card">
+        <div class="book-cover">
+          <!-- upload your Part 1 front cover as part1-cover.jpg -->
+          <img src="part1-cover.jpg" alt="Are You a Trainer? – Part 1 cover">
         </div>
-        <div class="cert-thumb" data-full="cert2-full.jpg">
-          <img src="cert2-thumb.jpg" alt="Certificate 2" />
+        <div class="book-info">
+          <h3>Are You a Trainer? – Part 1<br><span>The Silence Before the Sound</span></h3>
+          <p class="book-desc">
+            Part 1 follows Armaan’s first steps into the world of training – from nervous new facilitator
+            to someone discovering his voice, presence and session design craft inside the classroom.
+          </p>
+          <button class="btn small disabled">eBook – Coming Soon</button>
         </div>
-        <div class="cert-thumb" data-full="cert-sql-full.jpg">
-          <img src="cert-sql-thumb.jpg" alt="SQL Certificate" />
+      </article>
+
+      <!-- BOOK 2 -->
+      <article class="card book-card">
+        <div class="book-cover">
+          <!-- upload your Part 2 front cover as part2-cover.jpg -->
+          <img src="part2-cover.jpg" alt="Are You a Trainer? – Part 2 cover">
         </div>
+        <div class="book-info">
+          <h3>Are You a Trainer? – Part 2<br><span>The Resonance of Transformation</span></h3>
+          <p class="book-desc">
+            Part 2 moves beyond the classroom into metrics, models and leadership programs – showing how
+            trainers become consultants who shape performance, not just deliver sessions.
+          </p>
+          <button class="btn small disabled">eBook – Coming Soon</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATES ================= -->
+  <section id="certificates" class="section">
+    <div class="container section-header">
+      <h2>Certificates</h2>
+      <p>Selected certifications that support my work in training, analytics and process design.</p>
+    </div>
+
+    <div class="container cert-grid">
+      <!-- Replace src with your JPG files: cert1.jpg, cert2.jpg, cert3.jpg ... -->
+      <img src="cert1.jpg" alt="Certificate 1" class="cert-thumb" data-full="cert1.jpg">
+      <img src="cert2.jpg" alt="Certificate 2" class="cert-thumb" data-full="cert2.jpg">
+      <img src="cert3.jpg" alt="Certificate 3" class="cert-thumb" data-full="cert3.jpg">
+      <!-- Add more as needed -->
+    </div>
+  </section>
+
+  <!-- ================= FEEDBACK ================= -->
+  <section id="feedback" class="section section-alt">
+    <div class="container section-header">
+      <h2>Feedback &amp; Ratings</h2>
+      <p>Share your experience of my training, coaching or content.</p>
+    </div>
+
+    <div class="container feedback-grid">
+      <form class="feedback-form" action="https://formsubmit.co/amitsankhyan13@gmail.com" method="POST">
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New feedback from portfolio site">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-row">
+          <label for="fb-name">Name</label>
+          <input type="text" id="fb-name" name="Name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="fb-email">Email</label>
+          <input type="email" id="fb-email" name="Email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="fb-rating">Rating</label>
+          <div class="star-rating" id="starRating">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+          <input type="hidden" id="fb-rating" name="Rating" value="5">
+        </div>
+
+        <div class="form-row">
+          <label for="fb-message">Feedback</label>
+          <textarea id="fb-message" name="Feedback" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">Submit Feedback</button>
+        <p class="form-note">
+          This form is securely handled by FormSubmit. Your email will only be used to respond to you.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="container section-header">
+      <h2>Contact</h2>
+      <p>Let’s connect for training, consulting or content collaboration.</p>
+    </div>
+
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <h3>Contact Details</h3>
+        <p><strong>Phone:</strong> <a href="tel:+918448073832">+91 84480 73832</a></p>
+        <p><strong>Email:</strong> <a href="mailto:amitsankhyan13@gmail.com">amitsankhyan13@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amit-sankhyan-184a9b184/" target="_blank" rel="noopener">View Profile</a></p>
       </div>
+    </div>
+  </section>
 
-      <!-- PORTFOLIO DOWNLOAD -->
-      <div class="portfolio-download">
-        <p>You can download my consolidated training portfolio here:</p>
-        <a href="resume.pdf" target="_blank" class="btn secondary">
-          Download Portfolio / CV
-        </a>
-      </div>
-    </section>
-
-    <!-- BOOKS -->
-    <section id="books" class="section reveal">
-      <h2>My Books – Are You a Trainer?</h2>
-      <p class="books-intro">
-        A two-part novel that turns real training challenges into story – from
-        the first classroom to leadership programs and consulting.
-      </p>
-
-      <div class="book-grid">
-        <article class="book-card">
-          <div class="book-cover">
-            <img src="part1-cover.jpg" alt="Are You a Trainer? Part 1" />
-          </div>
-          <h3>Part 1 – The Silence Before the Sound</h3>
-          <p>
-            Armaan’s journey from agent to first-time trainer – fear, self-doubt
-            and the moment the room finally listens.
-          </p>
-          <div class="book-actions">
-            <a href="NOVEL-PART1.pdf" target="_blank" class="btn small secondary">
-              Read Sample
-            </a>
-            <a href="#" class="btn small primary">Buy eBook – ₹100</a>
-          </div>
-        </article>
-
-        <article class="book-card">
-          <div class="book-cover">
-            <img src="part2-cover.jpg" alt="Are You a Trainer? Part 2" />
-          </div>
-          <h3>Part 2 – The Resonance of Transformation</h3>
-          <p>
-            Armaan steps into metrics, models and leadership programs – where
-            training becomes a business lever and not just a session.
-          </p>
-          <div class="book-actions">
-            <a href="NOVEL-PART2.pdf" target="_blank" class="btn small secondary">
-              Read Sample
-            </a>
-            <a href="#" class="btn small primary">Buy eBook – ₹100</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT + FEEDBACK -->
-    <section id="contact" class="section reveal">
-      <h2>Contact &amp; Feedback</h2>
-      <div class="contact-grid">
-        <div>
-          <h3>Let’s Connect</h3>
-          <p><strong>Mobile:</strong> +91 84480 73832</p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:amitsankhyan13@gmail.com">
-              amitsankhyan13@gmail.com
-            </a>
-          </p>
-          <p>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/amit-sankhyan-184a9b184/"
-              target="_blank"
-            >
-              View Profile
-            </a>
-          </p>
-        </div>
-
-        <div class="feedback-box">
-          <h3>Leave a Rating</h3>
-          <p class="feedback-hint">
-            This form is powered by Google Forms, so your feedback is stored
-            safely and without errors.
-          </p>
-          <!-- TODO: replace FORM_URL with your own Google Form embed link -->
-          <div class="feedback-embed">
-            <iframe
-              src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
-              width="100%"
-              height="480"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-            >
-              Loading…
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    © 2025 Amit Sankhyan. All rights reserved.
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 Amit Sankhyan. All rights reserved.</span>
+      <span>Built as a living training portfolio.</span>
+    </div>
   </footer>
 
-  <!-- CERTIFICATE MODAL -->
-  <div id="cert-modal" class="modal">
-    <div class="modal-backdrop"></div>
+  <!-- ================= MODALS & VIEWERS ================= -->
+
+  <!-- PPT MODAL 1 -->
+  <div class="modal" id="ppt1-modal">
+    <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-content">
-      <button class="modal-close">×</button>
-      <img src="" alt="Certificate" id="modal-img" />
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3>Personal Loan Fundamentals – Sales &amp; Collections</h3>
+      <div class="ppt-embed">
+        <!-- REPLACE PPT1_ID with your real Google Drive PPTX file ID -->
+        <iframe
+          src="https://drive.google.com/file/d/PPT1_ID/preview"
+          allowfullscreen
+          loading="lazy"
+          frameborder="0">
+        </iframe>
+      </div>
+      <div class="modal-actions">
+        <a href="ppt1.html" class="btn ghost" target="_blank" rel="noopener">Open Full Screen</a>
+      </div>
     </div>
   </div>
 
-  <!-- SCRIPTS -->
+  <!-- PPT MODAL 2 -->
+  <div class="modal" id="ppt2-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3>Mastering Sales &amp; Training</h3>
+      <div class="ppt-embed">
+        <!-- REPLACE PPT2_ID with your real Google Drive PPTX file ID -->
+        <iframe
+          src="https://drive.google.com/file/d/PPT2_ID/preview"
+          allowfullscreen
+          loading="lazy"
+          frameborder="0">
+        </iframe>
+      </div>
+      <div class="modal-actions">
+        <a href="ppt2.html" class="btn ghost" target="_blank" rel="noopener">Open Full Screen</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATE MODAL -->
+  <div class="modal" id="cert-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content modal-cert">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <img src="" alt="Certificate full view" id="cert-full">
+    </div>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
   <script>
-    // Scroll reveal
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-    revealEls.forEach(el => observer.observe(el));
+    // Smooth scroll for nav links
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
 
-    // Toggle PPT viewers
-    document.querySelectorAll('.toggle').forEach(btn => {
+    // IntersectionObserver for section fade-in
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(sec => observer.observe(sec));
+
+    // Modal open/close
+    document.querySelectorAll('[data-modal-target]').forEach(btn => {
       btn.addEventListener('click', () => {
-        const target = document.querySelector(btn.dataset.target);
-        target.classList.toggle('open');
+        const target = btn.getAttribute('data-modal-target');
+        document.querySelector(target).classList.add('open');
       });
     });
 
-    // Certificate modal
-    const modal = document.getElementById('cert-modal');
-    const modalImg = document.getElementById('modal-img');
-    const closeBtn = document.querySelector('.modal-close');
-    const backdrop = document.querySelector('.modal-backdrop');
-
-    document.querySelectorAll('.cert-thumb').forEach(el => {
+    document.querySelectorAll('[data-close-modal]').forEach(el => {
       el.addEventListener('click', () => {
-        const fullSrc = el.getAttribute('data-full');
-        modalImg.src = fullSrc;
-        modal.classList.add('show');
+        el.closest('.modal').classList.remove('open');
       });
     });
 
-    [closeBtn, backdrop].forEach(el => {
-      el.addEventListener('click', () => modal.classList.remove('show'));
+    // Certificate gallery
+    const certModal = document.getElementById('cert-modal');
+    const certFull = document.getElementById('cert-full');
+
+    document.querySelectorAll('.cert-thumb').forEach(img => {
+      img.addEventListener('click', () => {
+        const src = img.getAttribute('data-full');
+        certFull.src = src;
+        certModal.classList.add('open');
+      });
+    });
+
+    // Star rating
+    const ratingStars = document.querySelectorAll('#starRating span');
+    const ratingInput = document.getElementById('fb-rating');
+
+    ratingStars.forEach(star => {
+      star.addEventListener('click', () => {
+        const val = star.getAttribute('data-value');
+        ratingInput.value = val;
+        ratingStars.forEach(s => {
+          s.classList.toggle('active', s.getAttribute('data-value') <= val);
+        });
+      });
     });
   </script>
 </body>
 </html>
+2️⃣ Updated style.css (only small addition for PPT embed)
+Use the same style.css I gave in the previous message, but add this block (or check it’s present):
+
+css
+Copy code
+/* PPT embed iframe */
+.ppt-embed iframe {
+  width: 100%;
+  height: 75vh;
+  border-radius: 20px;
+  background: #111;
+  box-shadow: 0 0 40px rgba(0,0,0,0.75);
+}
+
+.modal-actions {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+}
