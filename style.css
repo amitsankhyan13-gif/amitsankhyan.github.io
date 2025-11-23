@@ -120,7 +120,14 @@ body {
     margin-bottom: 30px; /* add clear space before buttons */
     max-width: 650px; /* keeps text from stretching too wide */
 }
-
+/* Fix tagline & button overlap */
+.hero-tagline {
+    display: block;
+    margin: 18px 0 32px; /* space above + below */
+    font-size: 1.15rem;
+    line-height: 1.5;
+    max-width: 700px;
+}
 .hero-buttons .btn {
   margin-right: 12px;
 }
