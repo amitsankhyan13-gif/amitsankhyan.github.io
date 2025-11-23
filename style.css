@@ -118,12 +118,13 @@ body {
   margin: 10px 0;
   color: var(--gold-bright);
 }
-.hero .tagline {
+.hero-tagline {
     font-size: 1.1rem;
     margin-top: 10px;
-    margin-bottom: 28px; /* Increased spacing */
-    line-height: 1.6; /* Better readability */
+    margin-bottom: 40px; /* This pushes DOWN buttons */
+    line-height: 1.6;
     display: block;
+    max-width: 650px;
 }
 .hero-buttons {
     display: flex;
