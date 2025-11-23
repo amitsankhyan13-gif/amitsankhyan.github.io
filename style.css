@@ -118,15 +118,7 @@ body {
   margin: 10px 0;
   color: var(--gold-bright);
 }
-}
-/* Fix tagline & button overlap */
-.hero-tagline {
-    display: block;
-    margin: 18px 0 32px; /* space above + below */
-    font-size: 1.15rem;
-    line-height: 1.5;
-    max-width: 700px;
-}
+
 .hero-buttons .btn {
   margin-right: 12px;
 }
