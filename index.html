@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- FIXED NAVBAR -->
+  <!-- NAVBAR -->
   <header class="nav">
     <div class="nav-brand">Amit Sankhyan</div>
     <nav>
@@ -21,8 +21,7 @@
   </header>
 
   <main>
-
-    <!-- HERO / HOME -->
+    <!-- HERO -->
     <section id="home" class="section hero reveal">
       <div class="hero-text">
         <p class="hero-kicker">Training &amp; Development Professional</p>
@@ -36,11 +35,14 @@
           <a class="btn ghost" href="resume.pdf" target="_blank">Download CV</a>
         </div>
       </div>
+
       <div class="hero-photo">
         <div class="hero-photo-inner">
           <img src="Profile.png" alt="Amit Sankhyan" />
         </div>
-        <p class="hero-caption">Designing learning journeys that transform people &amp; performance.</p>
+        <p class="hero-caption">
+          Designing learning journeys that transform people &amp; performance.
+        </p>
       </div>
     </section>
 
@@ -63,8 +65,8 @@
 
       <div class="pill-row">
         <span class="pill">New Hire Training</span>
-        <span class="pill">Sales / Collections Training</span>
-        <span class="pill">Coaching &amp; Floor Support</span>
+        <span class="pill">Sales &amp; Collections</span>
+        <span class="pill">Floor Coaching &amp; Huddles</span>
         <span class="pill">CSAT &amp; NPS Improvement</span>
         <span class="pill">Content &amp; PPT Design</span>
       </div>
@@ -85,17 +87,15 @@
         <article class="card">
           <h3>Corporate Trainer &amp; Coach</h3>
           <p>
-            Facilitate soft skills, communication, product &amp; process modules.
-            Run huddles, coaching sessions and refreshers linked to CSAT, NPS
-            and productivity.
+            Facilitate product, process and behavioural modules. Run huddles,
+            coaching sessions and refreshers linked to CSAT, NPS and productivity.
           </p>
         </article>
         <article class="card">
           <h3>BPO Domain Experience</h3>
           <p>
-            9+ years across voice &amp; non-voice processes, escalations, sales,
-            collections and support – building training that fits the real
-            floor environment.
+            9+ years across voice &amp; non-voice, escalations, sales, collections
+            and support – building training that fits the real floor environment.
           </p>
         </article>
       </div>
@@ -105,20 +105,20 @@
     <section id="portfolio" class="section reveal">
       <h2>Training Portfolio</h2>
 
-      <!-- TRAINING MODULES -->
-      <h3 class="section-sub">Training PPTs / Slide Modules</h3>
+      <!-- PPTs -->
+      <h3 class="section-sub">Training PPTs / Modules</h3>
       <div class="card-grid">
         <article class="card">
           <h4>Personal Loan Fundamentals – Sales &amp; Collections</h4>
           <p>
-            Product and process training for personal loans, built to improve
+            Product and process module for personal loans, built to improve
             customer conversations and collection outcomes.
           </p>
           <button class="btn small toggle" data-target="#ppt1">View Module</button>
           <div class="viewer" id="ppt1">
-            <!-- Replace YOUR_URL with encoded raw GitHub URL of ppt-personal-loans.pptx -->
+            <!-- REPLACE src WITH RAW GITHUB LINK OF ppt-personal-loans.pptx -->
             <iframe
-              src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/amitsankhyan13-gif/amitsankhyan.github.io/blob/main/ppt-personal-loans.pptx"
+              src="https://view.officeapps.live.com/op/embed.aspx?src=YOUR_PPT_PERSONAL_LOANS_URL"
               frameborder="0"
               allowfullscreen
             ></iframe>
@@ -133,9 +133,9 @@
           </p>
           <button class="btn small toggle" data-target="#ppt2">View Module</button>
           <div class="viewer" id="ppt2">
-            <!-- Replace YOUR_URL with encoded raw GitHub URL of ppt-sales-training.pptx -->
+            <!-- REPLACE src WITH RAW GITHUB LINK OF ppt-sales-training.pptx -->
             <iframe
-              src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/amitsankhyan13-gif/amitsankhyan.github.io/blob/main/ppt-sales-training.pptx"
+              src="https://view.officeapps.live.com/op/embed.aspx?src=YOUR_PPT_SALES_TRAINING_URL"
               frameborder="0"
               allowfullscreen
             ></iframe>
@@ -143,11 +143,11 @@
         </article>
       </div>
 
-      <!-- METRIC CHARTS -->
-      <h3 class="section-sub">CSAT &amp; NPS Views</h3>
+      <!-- CSAT / NPS -->
+      <h3 class="section-sub">CSAT &amp; NPS Visuals</h3>
       <div class="chart-row">
         <div class="chart-card">
-          <img src="csat-chart.png" alt="How to improve customer satisfaction" />
+          <img src="csat-chart.png" alt="Customer satisfaction framework" />
           <p class="chart-text">
             Training levers mapped to customer satisfaction – communities,
             multi-channel communication, employee engagement and support.
@@ -156,24 +156,32 @@
         <div class="chart-card">
           <img src="nps-chart.png" alt="Net Promoter Score model" />
           <p class="chart-text">
-            NPS explained through detractors, passives and promoters – used to
-            connect learner behaviour with loyalty impact.
+            Detractors, passives and promoters used to connect learner behaviour
+            with loyalty impact.
           </p>
         </div>
       </div>
 
       <!-- CERTIFICATES -->
-      <h3 class="section-sub">Selected Certifications</h3>
-      <div class="cert-grid">
-        <a href="cert-1.pdf" target="_blank" class="cert-pill">Certificate 1</a>
-        <a href="cert-2.pdf" target="_blank" class="cert-pill">Certificate 2</a>
-        <a href="cert-sql.pdf" target="_blank" class="cert-pill">Introduction to SQL</a>
+      <h3 class="section-sub">Certificates</h3>
+      <div class="cert-row">
+        <div class="cert-thumb" data-full="cert1-full.jpg">
+          <img src="cert1-thumb.jpg" alt="Certificate 1" />
+        </div>
+        <div class="cert-thumb" data-full="cert2-full.jpg">
+          <img src="cert2-thumb.jpg" alt="Certificate 2" />
+        </div>
+        <div class="cert-thumb" data-full="cert-sql-full.jpg">
+          <img src="cert-sql-thumb.jpg" alt="SQL Certificate" />
+        </div>
       </div>
 
       <!-- PORTFOLIO DOWNLOAD -->
       <div class="portfolio-download">
         <p>You can download my consolidated training portfolio here:</p>
-        <a href="resume.pdf" target="_blank" class="btn secondary">Download Portfolio / CV</a>
+        <a href="resume.pdf" target="_blank" class="btn secondary">
+          Download Portfolio / CV
+        </a>
       </div>
     </section>
 
@@ -196,7 +204,9 @@
             and the moment the room finally listens.
           </p>
           <div class="book-actions">
-            <a href="NOVEL-PART1.pdf" target="_blank" class="btn small secondary">Read Sample</a>
+            <a href="novel-part1.pdf" target="_blank" class="btn small secondary">
+              Read Sample
+            </a>
             <a href="#" class="btn small primary">Buy eBook – ₹100</a>
           </div>
         </article>
@@ -211,7 +221,9 @@
             training becomes a business lever and not just a session.
           </p>
           <div class="book-actions">
-            <a href="NOVEL-PART2.pdf" target="_blank" class="btn small secondary">Read Sample</a>
+            <a href="novel-part2.pdf" target="_blank" class="btn small secondary">
+              Read Sample
+            </a>
             <a href="#" class="btn small primary">Buy eBook – ₹100</a>
           </div>
         </article>
@@ -227,70 +239,61 @@
           <p><strong>Mobile:</strong> +91 84480 73832</p>
           <p>
             <strong>Email:</strong>
-            <a href="mailto:amitsankhyan13@gmail.com">amitsankhyan13@gmail.com</a>
+            <a href="mailto:amitsankhyan13@gmail.com">
+              amitsankhyan13@gmail.com
+            </a>
           </p>
           <p>
             <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/amit-sankhyan-184a9b184/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/amit-sankhyan-184a9b184/"
+              target="_blank"
+            >
               View Profile
             </a>
           </p>
         </div>
 
         <div class="feedback-box">
-          <h3>Share Your Feedback</h3>
-          <!-- simple mailto form; later you can replace with Google Form -->
-          <form
-            class="feedback-form"
-            method="post"
-            action="mailto:amitsankhyan13@gmail.com"
-            enctype="text/plain"
-          >
-            <label>
-              Name (optional)
-              <input type="text" name="name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-            <label>
-              Rating
-              <div class="stars">
-                <input type="radio" id="star5" name="rating" value="5" />
-                <label for="star5">★</label>
-                <input type="radio" id="star4" name="rating" value="4" />
-                <label for="star4">★</label>
-                <input type="radio" id="star3" name="rating" value="3" />
-                <label for="star3">★</label>
-                <input type="radio" id="star2" name="rating" value="2" />
-                <label for="star2">★</label>
-                <input type="radio" id="star1" name="rating" value="1" />
-                <label for="star1">★</label>
-              </div>
-            </label>
-            <label>
-              Feedback
-              <textarea name="message" rows="4" required></textarea>
-            </label>
-            <button type="submit" class="btn primary">Submit Feedback</button>
-            <p class="hint">
-              Later we can connect this to a Google Form to store feedback and show ratings on the site.
-            </p>
-          </form>
+          <h3>Leave a Rating</h3>
+          <p class="feedback-hint">
+            This form is powered by Google Forms, so your feedback is stored
+            safely and without errors.
+          </p>
+          <!-- TODO: replace FORM_URL with your own Google Form embed link -->
+          <div class="feedback-embed">
+            <iframe
+              src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
+              width="100%"
+              height="480"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            >
+              Loading…
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
     © 2025 Amit Sankhyan. All rights reserved.
   </footer>
 
-  <!-- SCROLL REVEAL + TOGGLE VIEWERS -->
+  <!-- CERTIFICATE MODAL -->
+  <div id="cert-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">×</button>
+      <img src="" alt="Certificate" id="modal-img" />
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
   <script>
-    // reveal sections on scroll
+    // Scroll reveal
     const revealEls = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
       entries => {
@@ -305,12 +308,30 @@
     );
     revealEls.forEach(el => observer.observe(el));
 
-    // toggle PPT viewers
+    // Toggle PPT viewers
     document.querySelectorAll('.toggle').forEach(btn => {
       btn.addEventListener('click', () => {
         const target = document.querySelector(btn.dataset.target);
         target.classList.toggle('open');
       });
+    });
+
+    // Certificate modal
+    const modal = document.getElementById('cert-modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeBtn = document.querySelector('.modal-close');
+    const backdrop = document.querySelector('.modal-backdrop');
+
+    document.querySelectorAll('.cert-thumb').forEach(el => {
+      el.addEventListener('click', () => {
+        const fullSrc = el.getAttribute('data-full');
+        modalImg.src = fullSrc;
+        modal.classList.add('show');
+      });
+    });
+
+    [closeBtn, backdrop].forEach(el => {
+      el.addEventListener('click', () => modal.classList.remove('show'));
     });
   </script>
 </body>
