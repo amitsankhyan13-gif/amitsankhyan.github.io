@@ -119,8 +119,12 @@ body {
   color: var(--gold-bright);
 }
 
-.hero-buttons .btn {
-  margin-right: 12px;
+.hero .hero-buttons {
+    margin-top: 32px !important; /* Pushes buttons down */
+}
+
+.hero .btn {
+    padding: 12px 26px;
 }
 
 .hero-photo-wrapper {
