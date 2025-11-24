@@ -140,29 +140,42 @@ body {
   position: relative;
 }
 
+/* Card that floats very slightly */
 .hero-photo-card {
   width: 310px;
   height: 370px;
-  background: linear-gradient(135deg, #1b1b1b, #111);
-  border-radius: 25px;
+  background: radial-gradient(circle at top, #262626 0, #111 50%, #050505 100%);
+  border-radius: 26px;
   overflow: hidden;
   position: relative;
   border: 2px solid var(--gold);
-  box-shadow: 0 0 25px rgba(212,175,55,0.35);
+  box-shadow:
+    0 0 18px rgba(0, 0, 0, 0.8),
+    0 0 14px rgba(212, 175, 55, 0.15);
+  animation: heroFloat 7s ease-in-out infinite;
 }
 
+/* Your cut-out photo with subtle movement */
 .hero-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center bottom;
+  transform-origin: center bottom;
+  animation: heroTilt 6s ease-in-out infinite;
 }
 
+/* Minimal inner glow on edges – G3 style */
 .hero-photo-glow {
   position: absolute;
   inset: 0;
-  box-shadow: inset 0 0 45px rgba(212,175,55,0.45);
+  box-shadow:
+    inset 0 0 28px rgba(212, 175, 55, 0.2),
+    inset 0 -40px 60px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
 }
 
+/* Experience badge stays the same but floats with the card a bit */
 .hero-badge {
   position: absolute;
   bottom: -25px;
@@ -173,7 +186,9 @@ body {
   text-align: center;
   color: #000;
   font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
+
 
 /* ================= BUTTONS ================= */
 .btn {
@@ -384,6 +399,23 @@ body {
 }
 
 /* ================= RESPONSIVE ================= */
+/* ===== Hero photo subtle animations ===== */
+
+/* Slow floating up & down */
+@keyframes heroFloat {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Micro “presenter” tilt and breathing */
+@keyframes heroTilt {
+  0%   { transform: translateY(0) rotate(0deg) scale(1); }
+  25%  { transform: translateY(-2px) rotate(-0.5deg) scale(1.01); }
+  50%  { transform: translateY(-4px) rotate(0.4deg) scale(1.015); }
+  75%  { transform: translateY(-2px) rotate(-0.3deg) scale(1.01); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); }
+}
 @media(max-width: 820px) {
   .hero-grid {
     flex-direction: column;
