@@ -142,7 +142,7 @@ body {
   position: relative;
 }
 
-/* ================= PROFILE IMAGE (NO ANIMATION) ================= */
+/* ================= PROFILE IMAGE (NO HANGING ANIMATION) ================= */
 .hero-photo-card {
   width: 310px;
   height: 370px;
@@ -154,6 +154,7 @@ body {
   box-shadow:
     0 0 18px rgba(0, 0, 0, 0.8),
     0 0 14px rgba(212, 175, 55, 0.15);
+  /* animation REMOVED */
 }
 
 /* Profile photo – static */
@@ -162,9 +163,11 @@ body {
   height: 100%;
   object-fit: contain;
   object-position: center bottom;
+  transform-origin: center bottom;
+  /* animation REMOVED */
 }
 
-/* Glow overlay (kept) */
+/* Minimal inner glow on edges */
 .hero-photo-glow {
   position: absolute;
   inset: 0;
@@ -233,6 +236,32 @@ body {
   justify-content: space-between;
   font-size: 13px;
   color: var(--text-muted);
+}
+
+/* ================= ANIMATIONS (UNCHANGED, UNUSED) ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes heroTilt {
+  0%   { transform: translateY(0) rotate(0deg) scale(1); }
+  25%  { transform: translateY(-2px) rotate(-0.5deg) scale(1.01); }
+  50%  { transform: translateY(-4px) rotate(0.4deg) scale(1.015); }
+  75%  { transform: translateY(-2px) rotate(-0.3deg) scale(1.01); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); }
 }
 
 /* ================= RESPONSIVE ================= */
