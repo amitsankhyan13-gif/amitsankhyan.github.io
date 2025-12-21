@@ -1,12 +1,12 @@
 /* ================= ROOT COLORS ================= */
 :root {
-  --bg-main: linear-gradient(180deg, #2b0f14 0%, #140607 100%);
-  --bg-card: #1b0c0f;
-  --gold: #d4af37;
-  --gold-soft: #e8cf7a;
-  --text-main: #f2f2f2;
-  --text-muted: #c9c2b8;
-  --shadow-gold: rgba(212,175,55,0.35);
+  --bg-dark: #0A0A0A;
+  --bg-card: #111;
+  --gold: #D4AF37;
+  --gold-bright: #f2d75d;
+  --text-light: #e7e7e7;
+  --text-muted: #b8b8b8;
+  --accent-shadow: rgba(212, 175, 55, 0.35);
 }
 
 /* ================= GLOBAL ================= */
@@ -17,76 +17,175 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  background: var(--bg-main);
-  color: var(--text-main);
-  line-height: 1.6;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
-/* ================= HEADER ================= */
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Fade in sections */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= CONTAINERS ================= */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* ================= HEADER & NAV ================= */
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(10, 5, 6, 0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: rgba(0, 0, 0, 0.85);
+  padding: 12px 0;
   z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-mark {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  padding: 5px 10px;
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .main-nav a {
-  color: var(--text-main);
+  color: var(--text-muted);
   text-decoration: none;
   margin-left: 18px;
   font-size: 14px;
+  transition: 0.3s;
 }
 
-.main-nav a:hover {
-  color: var(--gold);
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--gold-bright);
 }
 
 /* ================= HERO ================= */
 .hero-section {
-  padding: 110px 0 80px;
+  padding: 120px 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .hero-title {
-  font-size: 44px;
-  font-family: 'Cinzel', serif;
+  font-size: 46px;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: var(--gold);
+  text-shadow: 0 0 12px var(--accent-shadow);
 }
 
 .hero-subtitle {
-  margin-top: 14px;
-  color: var(--gold-soft);
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--gold-bright);
 }
 
+.hero-tagline {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  display: block;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.hero-photo-wrapper {
+  position: relative;
+}
+
+/* ================= PROFILE IMAGE (NO ANIMATION) ================= */
 .hero-photo-card {
-  width: 300px;
-  height: 360px;
-  border-radius: 24px;
-  border: 2px solid var(--gold);
+  width: 310px;
+  height: 370px;
+  background: radial-gradient(circle at top, #262626 0, #111 50%, #050505 100%);
+  border-radius: 26px;
   overflow: hidden;
-  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  position: relative;
+  border: 2px solid var(--gold);
+  box-shadow:
+    0 0 18px rgba(0, 0, 0, 0.8),
+    0 0 14px rgba(212, 175, 55, 0.15);
 }
 
+/* Profile photo – static */
 .hero-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center bottom;
 }
 
-/* ================= BOOK SECTION ================= */
-.book-cover img {
-  width: 180px;
-  height: auto;
-  border-radius: 14px;
-  border: 2px solid var(--gold);
-  transition: 0.35s ease;
+/* Glow overlay (kept) */
+.hero-photo-glow {
+  position: absolute;
+  inset: 0;
+  box-shadow:
+    inset 0 0 28px rgba(212, 175, 55, 0.2),
+    inset 0 -40px 60px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
 }
 
-.book-cover img:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px var(--shadow-gold);
+/* Experience badge */
+.hero-badge {
+  position: absolute;
+  bottom: -25px;
+  left: 15%;
+  background: var(--gold);
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* ================= BUTTONS ================= */
@@ -94,116 +193,66 @@ body {
   padding: 10px 18px;
   border-radius: 8px;
   border: 2px solid var(--gold);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.35s;
+}
+
+.btn.primary {
+  background: var(--gold);
+  color: #000;
+}
+
+.btn.primary:hover {
+  background: var(--gold-bright);
+  box-shadow: 0 0 18px var(--accent-shadow);
+}
+
+.btn.ghost {
   background: transparent;
-  color: var(--gold-soft);
-  cursor: pointer;
+  color: var(--gold-bright);
 }
 
-.btn:hover {
-  background: rgba(212,175,55,0.12);
-}
-
-/* ================= PPT MODAL ================= */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  backdrop-filter: blur(8px);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal.open {
-  display: flex;
-}
-
-.modal-content {
-  background: #120608;
-  padding: 20px;
-  border-radius: 16px;
-  max-width: 820px;
-  width: 90%;
-  border: 2px solid var(--gold);
-}
-
-.ppt-embed iframe {
-  width: 100%;
-  height: 460px;
-  border-radius: 12px;
-  border: none;
-}
-
-/* ================= CERTIFICATES ================= */
-.cert-thumb {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid #333;
-  cursor: pointer;
-}
-
-.cert-thumb:hover {
-  border-color: var(--gold);
-}
-
-/* ================= CERTIFICATE MODAL ================= */
-.modal-cert img {
-  max-width: 700px;
-  max-height: 80vh;
-  object-fit: contain;
-}
-
-/* ================= FEEDBACK ================= */
-.feedback-form {
-  max-width: 480px;
-  margin: auto;
-  background: var(--bg-card);
-  padding: 22px;
-  border-radius: 14px;
-  border: 1px solid #333;
-}
-
-/* ================= CONTACT ================= */
-.contact-card {
-  max-width: 420px;
-  margin: auto;
-  padding: 22px;
-  border-radius: 14px;
-  background: var(--bg-card);
-  border: 1px solid #333;
-}
-
-.contact-card a {
-  color: var(--gold-soft);
+.btn.ghost:hover {
+  background: rgba(212, 175, 55, 0.1);
 }
 
 /* ================= FOOTER ================= */
 .site-footer {
-  background: #0b0506;
-  border-top: 1px solid #2a1517;
-  padding: 18px 0;
+  border-top: 1px solid #222;
+  padding: 16px 0;
+  background: #050505;
 }
 
 .footer-inner {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  color: var(--text-muted);
   font-size: 13px;
+  color: var(--text-muted);
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 32px;
+@media (max-width: 820px) {
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .book-cover img {
-    width: 140px;
+  .hero-photo-card {
+    margin-top: 25px;
   }
 
-  .ppt-embed iframe {
-    height: 320px;
+  .main-nav {
+    display: none;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
   }
 }
