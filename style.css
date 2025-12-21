@@ -88,6 +88,7 @@ body {
   transition: 0.3s;
 }
 
+.main-nav a:hover,
 .main-nav a:focus {
   color: var(--gold-bright);
 }
@@ -519,7 +520,7 @@ body {
 }
 
 /* Hero photo subtle animations */
- {
+@keyframes heroFloat {
   0% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
   100% { transform: translateY(0); }
