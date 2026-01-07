@@ -248,30 +248,38 @@
   </section>
 
   <!-- ================= FEEDBACK ================= -->
-  <section id="feedback" class="section section-alt">
-    <div class="container section-header">
-      <h2>Feedback &amp; Ratings</h2>
-      <p>Share your experience of my training, coaching or content.</p>
-    </div>
+ <!-- ================= FEEDBACK & CONTACT ================= -->
+<section class="section section-alt">
 
-    <div class="container feedback-grid">
+  <div class="container section-header">
+    <h2>Feedback & Contact</h2>
+    <p>Share your experience or connect for collaboration.</p>
+  </div>
+
+  <div class="container feedback-contact-grid" id="feedback">
+
+    <!-- LEFT SIDE : FEEDBACK -->
+    <div>
+      <h3>Feedback & Ratings</h3>
+      <p>Share your experience of my training, coaching or content.</p>
+
       <form class="feedback-form" action="https://formsubmit.co/amitsankhyan13@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New feedback from portfolio site">
         <input type="hidden" name="_template" value="table">
 
         <div class="form-row">
-          <label for="fb-name">Name</label>
-          <input type="text" id="fb-name" name="Name" required>
+          <label>Name</label>
+          <input type="text" name="Name" required>
         </div>
 
         <div class="form-row">
-          <label for="fb-email">Email</label>
-          <input type="email" id="fb-email" name="Email" required>
+          <label>Email</label>
+          <input type="email" name="Email" required>
         </div>
 
         <div class="form-row">
-          <label for="fb-rating">Rating</label>
+          <label>Rating</label>
           <div class="star-rating" id="starRating">
             <span data-value="1">★</span>
             <span data-value="2">★</span>
@@ -281,42 +289,33 @@
           </div>
           <input type="hidden" id="fb-rating" name="Rating" value="5">
         </div>
-
         <div class="form-row">
-          <label for="fb-message">Feedback</label>
-          <textarea id="fb-message" name="Feedback" rows="4" required></textarea>
+          <label>Feedback</label>
+          <textarea name="Feedback" rows="4" required></textarea>
         </div>
 
         <button type="submit" class="btn primary">Submit Feedback</button>
-        <p class="form-note">
-          This form is securely handled by FormSubmit. Your email will only be used to respond to you.
-        </p>
       </form>
     </div>
-  </section>
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="section">
-    <div class="container section-header">
-      <h2>Contact</h2>
+    <!-- RIGHT SIDE : CONTACT -->
+    <div id="contact">
+  <h3>Contact</h3>
       <p>Let’s connect for training, consulting or content collaboration.</p>
-    </div>
 
-    <div class="container contact-grid">
       <div class="contact-card">
-        <h3>Contact Details</h3>
         <p><strong>Phone:</strong> <a href="tel:+918448073832">+91 84480 73832</a></p>
         <p><strong>Email:</strong> <a href="mailto:amitsankhyan13@gmail.com">amitsankhyan13@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amit-sankhyan-184a9b184/" 
-     target="_blank" 
-     rel="noopener" 
-     class="linkedin-link">
-    View Profile <i class="fab fa-linkedin"></i>
-  </a>
-</p>
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/amit-sankhyan-184a9b184/" target="_blank">
+            View Profile
+          </a>
+        </p>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <footer class="site-footer">
     <div class="container footer-inner">
