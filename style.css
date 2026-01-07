@@ -269,7 +269,7 @@ img {
   display: grid;
   grid-template-columns: 140px 1fr;
   gap: 20px;
-  align-items: center;
+  align-items: start;
 }
 
 .book-cover img {
@@ -280,7 +280,9 @@ img {
   color: var(--text-muted);
   font-size: 14px;
 }
-
+.book-desc {
+  max-width: 560px;
+}
 /* ================= CERTIFICATES ================= */
 .cert-grid {
   display: flex;
