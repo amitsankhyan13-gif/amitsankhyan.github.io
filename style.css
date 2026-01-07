@@ -500,3 +500,18 @@ img {
     height: 300px;
   }
 }
+/* FORCE feedback + contact side-by-side */
+.feedback-contact-grid {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr !important;
+  gap: 40px;
+  align-items: start;
+}
+
+.feedback-contact-grid > div {
+  min-width: 0;
+}
+
+.feedback-form {
+  max-width: 100%;
+}
