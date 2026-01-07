@@ -251,7 +251,10 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
-
+/* ================= BOOKS – vertical list override ================= */
+#books .books-list {
+  grid-template-columns: 1fr;
+}
 .card {
   background: var(--bg-card);
   padding: 25px;
