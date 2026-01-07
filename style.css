@@ -353,7 +353,15 @@ img {
   padding: 30px;
   border-radius: 12px;
 }
+.linkedin-link i {
+  margin-left: 6px;
+  color: var(--gold);
+  font-size: 16px;
+}
 
+.linkedin-link:hover i {
+  color: var(--gold-bright);
+}
 /* ================= FOOTER ================= */
 .site-footer {
   border-top: 1px solid #222;
