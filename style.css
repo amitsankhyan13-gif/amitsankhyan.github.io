@@ -515,36 +515,131 @@ img {
 .feedback-form {
   max-width: 100%;
 }
+```css
 /* ================= SKILLS & TOOLS ================= */
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  /* 12-column grid */
+  grid-template-columns: repeat(12, 1fr);
+
   gap: 24px;
   margin-top: 40px;
 }
 
+
+/* ================= SKILL CARDS ================= */
+
 .skill-card {
   height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
+
+
+/* First 3 cards = 4 columns each */
+/* This creates 3 cards in the first row */
+
+.skill-card:nth-child(1),
+.skill-card:nth-child(2),
+.skill-card:nth-child(3) {
+  grid-column: span 4;
+}
+
+
+/* Remaining 4 cards = 3 columns each */
+/* This creates 4 cards in the second row */
+
+.skill-card:nth-child(4),
+.skill-card:nth-child(5),
+.skill-card:nth-child(6),
+.skill-card:nth-child(7) {
+  grid-column: span 3;
+}
+
+
+/* ================= ICON ================= */
+
+.skill-icon {
+  font-size: 34px;
+  color: #e0ad24;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+
+/* ================= CARD HEADING ================= */
 
 .skill-card h3 {
   margin-bottom: 18px;
 }
 
+
+/* Small gold line under heading */
+
+.skill-card h3::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 2px;
+  background: #e0ad24;
+  margin-top: 12px;
+}
+
+
+/* ================= SKILL LIST ================= */
+
 .skill-card ul {
   padding-left: 20px;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 
 .skill-card li {
   margin-bottom: 9px;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+
+/* ================= HOVER EFFECT ================= */
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1100px) {
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-card:nth-child(n) {
+    grid-column: span 1;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
+
+  .skill-card:nth-child(n) {
+    grid-column: span 1;
+  }
+
+  .skill-card {
+    padding: 24px;
+  }
+
 }
+```
